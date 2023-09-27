@@ -22,3 +22,7 @@ Integrantes:
 ## Profile information after sucess at signin:
 
 ![image](https://github.com/loaspra/software-lab6/assets/40249960/a743576b-90ff-4b96-b111-463e5b495af6)
+
+## Accessing the logout route while not being signed in (this route requires the user to be signed in, so it can sign out. Because, you cannot sign out if you are not signed in)
+
+![image](https://github.com/loaspra/software-lab6/assets/40249960/c43f594f-26b6-413b-a966-c9e6c999f528)
