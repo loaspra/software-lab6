@@ -1,11 +1,3 @@
-# Lab 6 (OAuth2 with Okta)
-# Path: app.py
-# Description:
-# Basic web application that exposes a route that redirects to:
-# https://dev-<okta-domain>/oauth2/default/v1/authorize?
-# The actual url is : https://dev-16281537.okta.com/oauth2/default/v1/authorize?scope={openid-email-profile}&response_type=code&state=abcdefgh&client_id=0oa9dcv4g90yyHGSm5d7&redirect_uri=http://localhost:5000/authorization-code/callback
-
-# Importing the required libraries
 import base64
 import hashlib
 import secrets
@@ -122,8 +114,8 @@ def callback():
     ).json()
 
     # Get tokens and validate
-    # if not exchange.get("token_type"):
-    #         return "Unsupported token type. Should be 'Bearer'.", 403
+    if not exchange.get("token_type"):
+            return "Unsupported token type. Should be 'Bearer'.", 403
     print(f"Exchange: {exchange}")
     access_token = exchange["access_token"]
     id_token = exchange["id_token"]
