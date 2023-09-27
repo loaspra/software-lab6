@@ -7,7 +7,7 @@ Integrantes:
 + Juan Diego Laredo
 + Miguel Angel Alvarado 
 + Diego Enciso
-+ Batman
++ Jean Paul Melendez Cabezas
 
 
 > Codigo fuente:
